@@ -1,6 +1,9 @@
+// Implement quicksort
+
 function quickSort(array) {
   let sorted = [];
   const func = (array) => {
+    // define the base for recursion of func()
     if (array.length == 0) {
       return;
     } else if (array.length == 1) {
