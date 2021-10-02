@@ -10,11 +10,11 @@ function quickSort(array) {
   let pivot = array[array.length - 1];
   let big = [];
   let small = [];
-  for (let i of array) {
-    if (i < pivot) {
-      small.push(i);
-    } else if (i >= pivot) {
-      big.push(i);
+  for (let i = 0; i < array.length - 2; i++) {
+    if (array[i] < pivot) {
+      small.push(array[i]);
+    } else if (array[i] >= pivot) {
+      big.push(array[i]);
     }
   }
   quickSort(small);
